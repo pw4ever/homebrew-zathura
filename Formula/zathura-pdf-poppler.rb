@@ -3,6 +3,7 @@ class ZathuraPdfPoppler < Formula
   homepage "https://pwmt.org/projects/zathura-pdf-poppler/"
   url "https://github.com/pwmt/zathura-pdf-poppler/archive/0.3.0.tar.gz"
   sha256 "2034f70a936d458ddc9276f769e77ff308ba3bb1b7a7cdc87bab8b9ef7ade84a"
+  head "https://github.com/pwmt/zathura-pdf-poppler.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "meson" => :build

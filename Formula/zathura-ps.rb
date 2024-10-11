@@ -3,6 +3,7 @@ class ZathuraPs < Formula
   homepage "https://pwmt.org/projects/zathura-ps/"
   url "https://github.com/pwmt/zathura-ps/archive/0.2.6.tar.gz"
   sha256 "08c1927bfb8a40e201fa3638f9523d4b6d70e3444ef070bd4aa8a869b6574567"
+  head "https://github.com/pwmt/zathura-ps.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "meson" => :build

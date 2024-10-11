@@ -4,6 +4,7 @@ class ZathuraPdfMupdf < Formula
   url "https://github.com/pwmt/zathura-pdf-mupdf/archive/0.3.9.tar.gz"
   sha256 "05a6f22244c054a90f89ea2f746ea45ebaceb6c0559bfa4dcfd120c4d485346c"
   revision 1
+  head "https://github.com/pwmt/zathura-pdf-mupdf.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "meson" => :build

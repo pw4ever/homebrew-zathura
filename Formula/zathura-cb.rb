@@ -3,6 +3,7 @@ class ZathuraCb < Formula
   homepage "https://pwmt.org/projects/zathura-cb/"
   url "https://pwmt.org/projects/zathura-cb/download/zathura-cb-0.1.8.tar.xz"
   sha256 "452a0702e257dbed6a84b7faf6b51e4eb57a163654bbcddf6301143d3770ccc4"
+  head "https://github.com/pwmt/zathura-cb.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "meson" => :build

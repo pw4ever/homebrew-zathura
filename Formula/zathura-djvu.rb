@@ -3,6 +3,7 @@ class ZathuraDjvu < Formula
   homepage "https://pwmt.org/projects/zathura-djvu/"
   url "https://github.com/pwmt/zathura-djvu/archive/0.2.9.tar.gz"
   sha256 "84fae6da42e7cdc2e49ed4cd4f0315ac09716e95358b9c7487803a2cff47dbca"
+  head "https://github.com/pwmt/zathura-djvu.git", branch: "develop"
 
   depends_on "cmake" => :build
   depends_on "meson" => :build
