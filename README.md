@@ -1,8 +1,31 @@
 # Zathura
 
-Homebrew formulae to install zathura and plugins on Mac OS X
+Homebrew formulae to install zathura and plugins on Mac OS X.
 
-## Installation steps
+## Installation steps (for `pw4ever/homebrew-zathura`)
+
+### Tap the repository
+```
+brew tap pw4ever/homebrew-zathura
+```
+
+### Install from HEAD
+This reason of existence for this repo is to allow `brew install --HEAD` for all formulae to track latest upstream development.
+
+```sh
+for n in girara zathura; do
+    brew install --HEAD $n
+done
+mkdir -p $(brew --prefix zathura)/lib/zathura
+for n in pdf-mupdf ps cb djvu; do
+    z="zathura-$n"
+    l="lib${n}.dylib"
+    brew install --HEAD "$z"
+    ln -s $(brew --prefix "$z")/"$l" $(brew --prefix zathura)/lib/zathura/"$l"
+done
+```
+
+## Installation steps (original; for `zegervdv/zathura`)
 
 ### Tap the repository
 ```
