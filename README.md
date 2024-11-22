@@ -17,7 +17,7 @@ for n in girara zathura; do
     brew install --HEAD $n
 done
 mkdir -p $(brew --prefix zathura)/lib/zathura
-for n in pdf-mupdf ps cb djvu; do
+for n in pdf-poppler ps cb djvu; do
     z="zathura-$n"
     l="lib${n}.dylib"
     brew install --HEAD "$z"
